@@ -1,0 +1,56 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:../databases/media.db?socket_timeout=50000&connection_limit=2&timeout=50000"
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialActions", "nApi"]
+}
+
+model User {
+  id            String    @id
+  username      String
+  avatar        String?
+  discriminator Int
+  public_flags  Int
+  mute          Boolean
+  deaf          Boolean
+  nick          String?
+  premium_since DateTime?
+  joined_at     DateTime
+  is_pending    Boolean
+  pending       Boolean
+  bot           Boolean   @default(false)
+
+  role_user RoleOnUser[]
+
+}
+
+model Role {
+  id          String  @id
+  name        String
+  displayName String
+  permissions Int
+  position    Int
+  color       Int
+  hoist       Boolean
+  managed     Boolean
+  mentionable Boolean
+  icon        String?
+
+  role_user RoleOnUser[]
+
+}
+
+model RoleOnUser {
+  role   Role   @relation(fields: [roleId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  roleId String
+  user   User   @relation(fields: [userId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  userId String
+
+  @@id([roleId, userId])
+}
