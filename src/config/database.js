@@ -24,6 +24,8 @@ async function insertOrUpdate(db, tableName, data, conflict) {
   })
 };
 
+
+
 const upsert = (params) => {
   const {db, table, object, constraint} = params;
   const firstData = object[0] ? object[0] : object;
