@@ -1,7 +1,9 @@
+const { updateRole } = require("../helpers/database");
+
 module.exports = {
-	name: 'roleDelete',
-	once: true,
-	execute: (oldRole, newRole) => {
-		console.log(`Deleted role`, oldRole, newRole);
+	name: 'roleUpdate',
+	execute: async (client, newRole) => {
+
+		await updateRole(newRole);
 	},
 };

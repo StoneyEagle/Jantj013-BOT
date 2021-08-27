@@ -1,7 +1,10 @@
+const { deleteRole } = require("../helpers/database");
+
 module.exports = {
-	name: 'roleCreate',
-	once: true,
-	execute: (role) => {
-		console.log(`created role`, roles.find(r => r.id == role).name);
+	name: 'roleDelete',
+	execute: async (client, role) => {
+
+		await deleteRole(role);
+
 	},
 };

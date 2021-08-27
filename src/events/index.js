@@ -9,9 +9,9 @@ module.exports = (client) => {
     const event = require(`${__dirname}/${file}`);
 
     if (event.once) {
-      client.once(event.name, async (args) => event.execute(client, args));
+      client.once(event.name, async (...args) => event.execute(client, ...args));
     } else {
-      client.on(event.name, async (args) => event.execute(client, args));
+      client.on(event.name, async (...args) => event.execute(client, ...args));
     }
 
   }

@@ -1,7 +1,10 @@
+const { getRoles, createRole } = require("../helpers/database");
+
 module.exports = {
 	name: 'roleCreate',
-	once: true,
-	execute: (role) => {
-		console.log(`created role`, roles.find(r => r.id == role).name);
+	execute: async (client, role) => {
+
+		await createRole(role);
+		
 	},
 };

@@ -15,16 +15,18 @@ model User {
   id            String    @id
   username      String
   avatar        String?
-  discriminator Int
+  discriminator String
   public_flags  Int
   mute          Boolean
   deaf          Boolean
   nick          String?
   premium_since DateTime?
   joined_at     DateTime
-  is_pending    Boolean
-  pending       Boolean
+  is_pending    Boolean   @default(false)
+  pending       Boolean   @default(false)
   bot           Boolean   @default(false)
+  banned_at     DateTime?
+  deleted_at    DateTime?
 
   role_user RoleOnUser[]
 
@@ -34,7 +36,7 @@ model Role {
   id          String  @id
   name        String
   displayName String
-  permissions Int
+  permissions String
   position    Int
   color       Int
   hoist       Boolean

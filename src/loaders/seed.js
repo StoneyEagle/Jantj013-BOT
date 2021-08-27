@@ -17,7 +17,7 @@ async function seed() {
       managed: role.managed,
       mentionable: role.mentionable,
       icon: role.icon,
-      permissions: parseInt(role.permissions)
+      permissions: role.permissions.toString()
     };
     transaction.push(prismaMedia.role.upsert({
       where: {
@@ -34,7 +34,7 @@ async function seed() {
       id: user.user.id,
       username: user.user.username,
       avatar: user.user.avatar,
-      discriminator: parseInt(user.user.discriminator),
+      discriminator: user.user.discriminator,
       public_flags: user.user.public_flags,
       mute: user.mute,
       deaf: user.deaf,
@@ -60,7 +60,7 @@ async function seed() {
         }),
       },
     };
-    
+
     transaction.push(prismaMedia.user.upsert({
       where: {
         id: data.id
@@ -71,6 +71,8 @@ async function seed() {
   });
 
   await prismaMedia.$transaction(transaction);
+  
+  console.log('Database seeded.');
 }
 
 module.exports = seed;
