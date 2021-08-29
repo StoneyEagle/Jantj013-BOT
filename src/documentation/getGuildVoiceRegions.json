@@ -1,0 +1,93 @@
+[
+  {
+    "id": "us-west",
+    "name": "US West",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "us-east",
+    "name": "US East",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "us-central",
+    "name": "US Central",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "us-south",
+    "name": "US South",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "singapore",
+    "name": "Singapore",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "southafrica",
+    "name": "South Africa",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "custom": false,
+    "deprecated": false,
+    "optimal": true
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "hongkong",
+    "name": "Hong Kong",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "russia",
+    "name": "Russia",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  },
+  {
+    "id": "india",
+    "name": "India",
+    "custom": false,
+    "deprecated": false,
+    "optimal": false
+  }
+]

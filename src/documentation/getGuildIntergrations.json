@@ -1,0 +1,163 @@
+[
+  {
+    "id": "873279837664604160",
+    "type": "discord",
+    "name": "Yunite",
+    "account": {
+      "id": "468459655929266176",
+      "name": "Yunite"
+    },
+    "application": {
+      "id": "468459655929266176",
+      "name": "Yunite",
+      "icon": "feba3b09921c8146ab8be6ff06059af2",
+      "description": "Advanced bot around Fortnite with additional multi-purpose features\n\n**Invite**: https://invite.yunite.xyz\n**Homepage**: https://yunite.xyz\n**Support**: https://support.yunite.xyz",
+      "summary": "Advanced bot around Fortnite with additional multi-purpose features\n\n**Invite**: https://invite.yunite.xyz\n**Homepage**: https://yunite.xyz\n**Support**: https://support.yunite.xyz",
+      "bot": {
+        "id": "468459655929266176",
+        "username": "Yunite",
+        "avatar": "feba3b09921c8146ab8be6ff06059af2",
+        "discriminator": "7025",
+        "public_flags": 65536,
+        "bot": true
+      }
+    },
+    "enabled": true,
+    "user": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    }
+  },
+  {
+    "id": "873251938563657779",
+    "type": "discord",
+    "name": "YAGPDB.xyz",
+    "account": {
+      "id": "204255083083333633",
+      "name": "YAGPDB.xyz"
+    },
+    "application": {
+      "id": "204255083083333633",
+      "name": "YAGPDB.xyz",
+      "icon": "2fa57b425415134d4f8b279174131ad6",
+      "description": "Yet another general purpose discord bot (yagpdb) is a general purpose discord bot with fun stuff and oranges.",
+      "summary": "Yet another general purpose discord bot (yagpdb) is a general purpose discord bot with fun stuff and oranges.",
+      "bot": {
+        "id": "204255221017214977",
+        "username": "YAGPDB.xyz",
+        "avatar": "2fa57b425415134d4f8b279174131ad6",
+        "discriminator": "8760",
+        "public_flags": 65536,
+        "bot": true
+      }
+    },
+    "enabled": true,
+    "user": {
+      "id": "677597250981199878",
+      "username": "M1ck",
+      "avatar": "aaac9f22c62c933770dbfbc605bef29a",
+      "discriminator": "0068",
+      "public_flags": 0
+    }
+  },
+  {
+    "id": "873267074531741766",
+    "type": "discord",
+    "name": "Arcane",
+    "account": {
+      "id": "437808476106784770",
+      "name": "Arcane"
+    },
+    "application": {
+      "id": "437808476106784770",
+      "name": "Arcane",
+      "icon": "771f3ccb67befe8c5a4a11072dbb63d5",
+      "description": "The greatest leveling bot on Discord with multiple other features.\n\nInvite me to your server: https://arcane.bot/invite\nCheck my status: https://arcane.bot/status\nUpgrade to Premium: https://arcane.bot/premium",
+      "summary": "The greatest leveling bot on Discord with multiple other features.\n\nInvite me to your server: https://arcane.bot/invite\nCheck my status: https://arcane.bot/status\nUpgrade to Premium: https://arcane.bot/premium",
+      "cover_image": "0982beea084755c04aebf282ca1abd7b",
+      "bot": {
+        "id": "437808476106784770",
+        "username": "Arcane",
+        "avatar": "771f3ccb67befe8c5a4a11072dbb63d5",
+        "discriminator": "7800",
+        "public_flags": 65536,
+        "bot": true
+      }
+    },
+    "enabled": true,
+    "user": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    }
+  },
+  {
+    "id": "873260347346272266",
+    "type": "discord",
+    "name": "MEE6",
+    "account": {
+      "id": "159985415099514880",
+      "name": "MEE6"
+    },
+    "application": {
+      "id": "159985415099514880",
+      "name": "MEE6",
+      "icon": "d5996b1ffb7c379e31707152bcaddd82",
+      "description": "Setup moderation, social alerts, leveling and much more on https://mee6.xyz\n\n🚨 **15% OFF** on **MEE6 Premium Lifetime** with **SUMMERLIFETIME15** coupon!\nhttps://mee6.xyz/premium",
+      "summary": "Setup moderation, social alerts, leveling and much more on https://mee6.xyz\n\n🚨 **15% OFF** on **MEE6 Premium Lifetime** with **SUMMERLIFETIME15** coupon!\nhttps://mee6.xyz/premium",
+      "bot": {
+        "id": "159985870458322944",
+        "username": "MEE6",
+        "avatar": "b50adff099924dd5e6b72d13f77eb9d7",
+        "discriminator": "4876",
+        "public_flags": 65536,
+        "bot": true
+      }
+    },
+    "enabled": true,
+    "user": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    }
+  },
+  {
+    "id": "880868257710616686",
+    "type": "discord",
+    "name": "Jantj013",
+    "account": {
+      "id": "875072045531144252",
+      "name": "Jantj013"
+    },
+    "application": {
+      "id": "875072045531144252",
+      "name": "Jantj013",
+      "icon": "8f3fb89a12f5120e0f7c191ffc86d7e8",
+      "description": "Dit is de bot van Jantj013",
+      "summary": "Dit is de bot van Jantj013",
+      "bot": {
+        "id": "875072045531144252",
+        "username": "Jantj013 BOT",
+        "avatar": "8f3fb89a12f5120e0f7c191ffc86d7e8",
+        "discriminator": "7033",
+        "public_flags": 0,
+        "bot": true
+      }
+    },
+    "enabled": true,
+    "user": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    }
+  }
+]

@@ -1,19 +1,17 @@
 const fs = require('fs');
-const { Collection } = require('discord.js');
+const Command = require('../structures/Command');
 
-module.exports = () => {
-
-    let commands = new Collection();
+module.exports = (client) => {
   
     const commandFiles = fs.readdirSync(__dirname).filter(file => file != 'index.js');
   
     for (const file of commandFiles) {
-  
+      /**
+       * @type {Command}
+       */
       const command = require(`${__dirname}/${file}`);
   
-      commands.set(command.data.name, command);
+      client.commands.set(command.name, command);
     }
-    
-    return commands;
 
 };

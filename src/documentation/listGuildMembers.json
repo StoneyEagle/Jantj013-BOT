@@ -1,0 +1,235 @@
+[
+  {
+    "roles": [
+      "873260347346272267",
+      "873247408249794660"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T17:44:51.277000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "159985870458322944",
+      "username": "MEE6",
+      "avatar": "b50adff099924dd5e6b72d13f77eb9d7",
+      "discriminator": "4876",
+      "public_flags": 65536,
+      "bot": true
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873247408249794660",
+      "873251938563657780"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T17:11:26.445000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "204255221017214977",
+      "username": "YAGPDB.xyz",
+      "avatar": "2fa57b425415134d4f8b279174131ad6",
+      "discriminator": "8760",
+      "public_flags": 65536,
+      "bot": true
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873739419587321856",
+      "873247402851696650",
+      "874477067251617802",
+      "873738869571485776",
+      "873738527806988309",
+      "873291424903360572",
+      "873247407285096479"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-25T23:25:59.549000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "370822077831184405",
+      "username": "Stoney_Eagle",
+      "avatar": "183182cb48456b3eee774a1a0b9f518a",
+      "discriminator": "0513",
+      "public_flags": 0
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873267074531741768",
+      "873247408249794660"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T18:11:35.159000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "437808476106784770",
+      "username": "Arcane",
+      "avatar": "771f3ccb67befe8c5a4a11072dbb63d5",
+      "discriminator": "7800",
+      "public_flags": 65536,
+      "bot": true
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873279837664604161",
+      "873247408249794660"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T19:02:18.090000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "468459655929266176",
+      "username": "Yunite",
+      "avatar": "feba3b09921c8146ab8be6ff06059af2",
+      "discriminator": "7025",
+      "public_flags": 65536,
+      "bot": true
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "880510961608441856",
+      "873247402851696650",
+      "873271492761243670",
+      "873247407285096479"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-10T17:11:35.728000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "508322370436464668",
+      "username": "YTRubberduck",
+      "avatar": "c1815e9ada1feea43a1bb9ea61ff6856",
+      "discriminator": "6123",
+      "public_flags": 0
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873739419587321856",
+      "874477067251617802",
+      "873738869571485776",
+      "873247385717973044",
+      "873738527806988309",
+      "873271492761243670",
+      "873738199049064478"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T16:26:16.045000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873738199049064478",
+      "873271492761243670",
+      "873247407285096479"
+    ],
+    "nick": "Onswald",
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-27T19:14:04.837000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "668828493026689025",
+      "username": "Oswald",
+      "avatar": "db9a13856827ed86f9ef37b34154ac94",
+      "discriminator": "1191",
+      "public_flags": 0
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873739419587321856",
+      "874477067251617802",
+      "873738869571485776",
+      "873738527806988309",
+      "873271492761243670",
+      "873738199049064478",
+      "873247407285096479"
+    ],
+    "nick": "OGGames12",
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-06T19:06:48.210000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "768461367606378586",
+      "username": "Coach B4kr1",
+      "avatar": "a_2c74277deb1e6aaadf61e6a75ba87abc",
+      "discriminator": "2021",
+      "public_flags": 0
+    },
+    "mute": false,
+    "deaf": false
+  },
+  {
+    "roles": [
+      "873247408249794660",
+      "880868257710616687"
+    ],
+    "nick": null,
+    "avatar": null,
+    "premium_since": null,
+    "joined_at": "2021-08-27T17:35:58.412000+00:00",
+    "is_pending": false,
+    "pending": false,
+    "user": {
+      "id": "875072045531144252",
+      "username": "Jantj013 BOT",
+      "avatar": "8f3fb89a12f5120e0f7c191ffc86d7e8",
+      "discriminator": "7033",
+      "public_flags": 0,
+      "bot": true
+    },
+    "mute": false,
+    "deaf": false
+  }
+]

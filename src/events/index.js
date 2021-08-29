@@ -1,5 +1,9 @@
 const fs = require('fs');
+const { ClientEvents } = require('discord.js')
 
+/**
+ * @param {import('discord.js').Client} client} 
+ */
 module.exports = (client) => {
 
   const eventFiles = fs.readdirSync(__dirname).filter(file => file != 'index.js');
@@ -9,9 +13,9 @@ module.exports = (client) => {
     const event = require(`${__dirname}/${file}`);
 
     if (event.once) {
-      client.once(event.name, async (...args) => event.execute(client, ...args));
+      client.once(event.name, async (...args) => event.run(client, ...args));
     } else {
-      client.on(event.name, async (...args) => event.execute(client, ...args));
+      client.on(event.name, async (...args) => event.run(client, ...args));
     }
 
   }

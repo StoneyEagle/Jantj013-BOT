@@ -1,5 +1,5 @@
 const { prismaMedia } = require("../config/database");
-const { getGuildMember, getGuildRoles } = require("../routes/guild");
+const { listGuildMembers, getGuildRoles } = require("../routes/guild");
 const { getColors, diff } = require("./functions");
 
 
@@ -141,9 +141,9 @@ const unbanUser = async (user) => {
 const updateUserRoles = async (user) => {
 
   const roles = await getRoles(user.id);
-  let response = await getGuildMember(user);
+  let response = await listGuildMembers(user);
 
-  if (response.roles.length > 0 && (roles.length > response.roles.length || roles.length < response.roles.length)) {
+  if (response.roles?.length > 0 && (roles.length > response.roles.length || roles.length < response.roles.length)) {
 
     await prismaMedia.roleOnUser.deleteMany({
       where: {

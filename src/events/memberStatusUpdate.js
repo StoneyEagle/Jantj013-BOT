@@ -2,9 +2,14 @@ const { updateUserRoles } = require("../helpers/database");
 
 module.exports = {
 	name: 'guildMemberUpdate',
-	execute: async (client, newMember) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 
-		await updateUserRoles(newMember.user);
+		await updateUserRoles(message.user);
 
 	
 	},

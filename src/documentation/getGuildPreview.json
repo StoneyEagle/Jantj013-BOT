@@ -1,0 +1,61 @@
+{
+  "id": "873240570515058758",
+  "name": "Jantj013 Server!",
+  "icon": null,
+  "description": null,
+  "splash": null,
+  "discovery_splash": null,
+  "features": [
+    "NEWS",
+    "COMMUNITY"
+  ],
+  "approximate_member_count": 10,
+  "approximate_presence_count": 7,
+  "emojis": [
+    {
+      "name": "6621_tiktok",
+      "roles": [],
+      "id": "880510701792264203",
+      "require_colons": true,
+      "managed": false,
+      "animated": false,
+      "available": true
+    },
+    {
+      "name": "7283_twitch",
+      "roles": [],
+      "id": "880510711678259232",
+      "require_colons": true,
+      "managed": false,
+      "animated": false,
+      "available": true
+    },
+    {
+      "name": "8635_instagram",
+      "roles": [],
+      "id": "880510721446780959",
+      "require_colons": true,
+      "managed": false,
+      "animated": false,
+      "available": true
+    },
+    {
+      "name": "youtube_2",
+      "roles": [],
+      "id": "880510733929041970",
+      "require_colons": true,
+      "managed": false,
+      "animated": false,
+      "available": true
+    },
+    {
+      "name": "twitter",
+      "roles": [],
+      "id": "880510742862917642",
+      "require_colons": true,
+      "managed": false,
+      "animated": false,
+      "available": true
+    }
+  ]
+}

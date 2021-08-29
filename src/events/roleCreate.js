@@ -2,9 +2,14 @@ const { getRoles, createRole } = require("../helpers/database");
 
 module.exports = {
 	name: 'roleCreate',
-	execute: async (client, role) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 
-		await createRole(role);
+		await createRole(message);
 		
 	},
 };

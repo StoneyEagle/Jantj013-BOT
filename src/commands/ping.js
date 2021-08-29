@@ -1,10 +1,11 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const Command = require('../structures/Command');
 
-module.exports = {
-	data: new SlashCommandBuilder()
-		.setName('ping')
-		.setDescription('Replies with Pong!'),
-	async execute(interaction) {
-		await interaction.reply('Pong!');
+module.exports = new Command({
+	name: 'ping',
+  description: 'Shows the ping of the bot!',
+	run: async (client, interaction, args) => {
+
+		await interaction.reply(`Ping: ${client.ws.ping} ms.`);
+	
 	},
-};
+});

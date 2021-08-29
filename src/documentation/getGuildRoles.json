@@ -1,0 +1,237 @@
+[
+  {
+    "id": "873240570515058758",
+    "name": "@everyone",
+    "permissions": "1024",
+    "position": 0,
+    "color": 0,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873247385717973044",
+    "name": "👑│Owner",
+    "permissions": "549755813631",
+    "position": 19,
+    "color": 16711680,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873247402851696650",
+    "name": "💼│Admin",
+    "permissions": "540951965431",
+    "position": 18,
+    "color": 7419530,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873247404965658717",
+    "name": "🔥│Moderator",
+    "permissions": "522979372743",
+    "position": 17,
+    "color": 15277667,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873247407285096479",
+    "name": "🌍│Member",
+    "permissions": "103115968065",
+    "position": 7,
+    "color": 1752220,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873247408249794660",
+    "name": "🤖│Bots",
+    "permissions": "541165879295",
+    "position": 16,
+    "color": 15844367,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873251938563657780",
+    "name": "YAGPDB.xyz",
+    "permissions": "139959070321",
+    "position": 12,
+    "color": 0,
+    "hoist": false,
+    "managed": true,
+    "mentionable": false,
+    "icon": null,
+    "tags": {
+      "bot_id": "204255221017214977"
+    }
+  },
+  {
+    "id": "873260347346272267",
+    "name": "MEE6",
+    "permissions": "1945627743",
+    "position": 13,
+    "color": 0,
+    "hoist": false,
+    "managed": true,
+    "mentionable": false,
+    "icon": null,
+    "tags": {
+      "bot_id": "159985870458322944"
+    }
+  },
+  {
+    "id": "873267074531741768",
+    "name": "Arcane",
+    "permissions": "2146958847",
+    "position": 11,
+    "color": 0,
+    "hoist": false,
+    "managed": true,
+    "mentionable": false,
+    "icon": null,
+    "tags": {
+      "bot_id": "437808476106784770"
+    }
+  },
+  {
+    "id": "873271492761243670",
+    "name": "✅│Yunite verify",
+    "permissions": "103079283713",
+    "position": 9,
+    "color": 2067276,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873279837664604161",
+    "name": "Yunite",
+    "permissions": "8",
+    "position": 14,
+    "color": 0,
+    "hoist": false,
+    "managed": true,
+    "mentionable": false,
+    "icon": null,
+    "tags": {
+      "bot_id": "468459655929266176"
+    }
+  },
+  {
+    "id": "873291424903360572",
+    "name": "🟢│Verify",
+    "permissions": "103079283713",
+    "position": 8,
+    "color": 2067276,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873336414203441192",
+    "name": "📡│Host",
+    "permissions": "68609",
+    "position": 10,
+    "color": 15158332,
+    "hoist": true,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873738199049064478",
+    "name": "🧱│Fortnite",
+    "permissions": "103079283713",
+    "position": 6,
+    "color": 5533306,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873738527806988309",
+    "name": "🔴│Uno",
+    "permissions": "103079283713",
+    "position": 5,
+    "color": 5533306,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873738869571485776",
+    "name": "🎨│Skribbl",
+    "permissions": "103079283713",
+    "position": 4,
+    "color": 5533306,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "873739419587321856",
+    "name": "🎶│Music",
+    "permissions": "103079283713",
+    "position": 3,
+    "color": 5533306,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "874477067251617802",
+    "name": "🤙│Relax",
+    "permissions": "103079283713",
+    "position": 2,
+    "color": 5533306,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "880510961608441856",
+    "name": ".",
+    "permissions": "549755813887",
+    "position": 20,
+    "color": 10181046,
+    "hoist": false,
+    "managed": false,
+    "mentionable": false,
+    "icon": null
+  },
+  {
+    "id": "880868257710616687",
+    "name": "Jantj013",
+    "permissions": "8",
+    "position": 15,
+    "color": 0,
+    "hoist": false,
+    "managed": true,
+    "mentionable": false,
+    "icon": null,
+    "tags": {
+      "bot_id": "875072045531144252"
+    }
+  }
+]

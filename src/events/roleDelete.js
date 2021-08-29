@@ -2,9 +2,14 @@ const { deleteRole } = require("../helpers/database");
 
 module.exports = {
 	name: 'roleDelete',
-	execute: async (client, role) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 
-		await deleteRole(role);
+		await deleteRole(message);
 
 	},
 };

@@ -2,13 +2,18 @@ const { createUser } = require("../helpers/database");
 
 module.exports = {
 	name: 'guildMemberAdd',
-	execute: async (client, member) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 
-		await createUser(member);
+		await createUser(message);
 		
-		const message = `Welcome motahfockin <@${member.user.username} to our server!`;
+		const msg = `Welcome motahfockin <@${message.user.username} to our server!`;
 
-		member.send(message);
+		message.send(msg);
 		
 	},
 };

@@ -1,0 +1,146 @@
+[
+  {
+    "code": "QrausMqm",
+    "guild": {
+      "id": "873240570515058758",
+      "name": "Jantj013 Server!",
+      "splash": null,
+      "banner": null,
+      "description": null,
+      "icon": null,
+      "features": [
+        "COMMUNITY",
+        "NEWS"
+      ],
+      "verification_level": 2,
+      "vanity_url_code": null,
+      "nsfw": false,
+      "nsfw_level": 0
+    },
+    "channel": {
+      "id": "873240570515058762",
+      "name": "👋│welcome",
+      "type": 0
+    },
+    "inviter": {
+      "id": "370822077831184405",
+      "username": "Stoney_Eagle",
+      "avatar": "183182cb48456b3eee774a1a0b9f518a",
+      "discriminator": "0513",
+      "public_flags": 0
+    },
+    "uses": 14,
+    "max_uses": 0,
+    "max_age": 604800,
+    "temporary": false,
+    "created_at": "2021-08-27T18:09:37.679000+00:00"
+  },
+  {
+    "code": "dka5rb76",
+    "guild": {
+      "id": "873240570515058758",
+      "name": "Jantj013 Server!",
+      "splash": null,
+      "banner": null,
+      "description": null,
+      "icon": null,
+      "features": [
+        "COMMUNITY",
+        "NEWS"
+      ],
+      "verification_level": 2,
+      "vanity_url_code": null,
+      "nsfw": false,
+      "nsfw_level": 0
+    },
+    "channel": {
+      "id": "873293183101067276",
+      "name": "🏅│server-level-ups",
+      "type": 0
+    },
+    "inviter": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    },
+    "uses": 7,
+    "max_uses": 0,
+    "max_age": 604800,
+    "temporary": false,
+    "created_at": "2021-08-27T17:15:11.268000+00:00"
+  },
+  {
+    "code": "gApsa3Md",
+    "guild": {
+      "id": "873240570515058758",
+      "name": "Jantj013 Server!",
+      "splash": null,
+      "banner": null,
+      "description": null,
+      "icon": null,
+      "features": [
+        "COMMUNITY",
+        "NEWS"
+      ],
+      "verification_level": 2,
+      "vanity_url_code": null,
+      "nsfw": false,
+      "nsfw_level": 0
+    },
+    "channel": {
+      "id": "873240570515058762",
+      "name": "👋│welcome",
+      "type": 0
+    },
+    "inviter": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    },
+    "uses": 0,
+    "max_uses": 0,
+    "max_age": 604800,
+    "temporary": false,
+    "created_at": "2021-08-25T20:53:12.122000+00:00"
+  },
+  {
+    "code": "hhjD5q39",
+    "guild": {
+      "id": "873240570515058758",
+      "name": "Jantj013 Server!",
+      "splash": null,
+      "banner": null,
+      "description": null,
+      "icon": null,
+      "features": [
+        "COMMUNITY",
+        "NEWS"
+      ],
+      "verification_level": 2,
+      "vanity_url_code": null,
+      "nsfw": false,
+      "nsfw_level": 0
+    },
+    "channel": {
+      "id": "873240570515058763",
+      "name": "📃│rules",
+      "type": 0
+    },
+    "inviter": {
+      "id": "527313262711406623",
+      "username": "Jantj013",
+      "avatar": "fad1c29bb6e70ddc0fa3098951ab2f5f",
+      "discriminator": "9004",
+      "public_flags": 0
+    },
+    "uses": 1,
+    "max_uses": 0,
+    "max_age": 604800,
+    "temporary": false,
+    "created_at": "2021-08-25T20:54:44.412000+00:00"
+  }
+]

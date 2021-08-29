@@ -2,9 +2,14 @@ const { deleteUser } = require("../helpers/database");
 
 module.exports = {
 	name: 'guildMemberRemove',
-	execute: async (client, member) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 			
-		await deleteUser(member);
+		await deleteUser(message);
 
 		
 		// const message = `Welcome motahfockin <@${member.user.username} to our server!`;

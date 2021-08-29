@@ -1,8 +1,10 @@
 
-const user = require('./user');
+const channel = require('./channel');
 const guild = require('./guild');
+const user = require('./user');
 
 module.exports = {
-  user,
+  channel,
   guild,
+  user,
 };

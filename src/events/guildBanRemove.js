@@ -2,9 +2,14 @@ const { unbanUser } = require("../helpers/database");
 
 module.exports = {
 	name: 'guildBanRemove',
-	execute: async (client, member) => {
+	/**
+	 * @param {import('discord.js').Client} client
+	 * @param {import('discord.js').Message} message
+	 * @param {string[]} args
+	 */
+	run: async (client, message, args) => {
 			
-		await unbanUser(member);
+		await unbanUser(message);
 
 
 		
