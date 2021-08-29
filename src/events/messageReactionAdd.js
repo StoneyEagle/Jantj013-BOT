@@ -46,7 +46,6 @@ module.exports = {
     client.on('raw', async (data) => {
       if(data.t == 'MESSAGE_REACTION_REMOVE' && data.d.user_id == User.id){
 				client.emit('messageReactionRemove', messageReaction, user);
-				client.off('raw');
 			}
 		});
 
