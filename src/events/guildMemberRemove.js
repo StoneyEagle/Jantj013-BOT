@@ -4,13 +4,13 @@ module.exports = {
 	name: 'guildMemberRemove',
 	/**
 	 * @param {import('discord.js').Client} client
-	 * @param {import('discord.js').Message} message
+	 * @param {import('discord.js').GuildMember} member
 	 * @param {string[]} args
 	 */
-	run: async (client, message, args) => {
+	run: async (client, member, args) => {
 			
-		await deleteUser(message);
-
+		await deleteUser(member);
+		// console.log(member, args);
 		
 		// const message = `Welcome motahfockin <@${member.user.username} to our server!`;
 

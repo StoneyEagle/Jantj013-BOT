@@ -4,16 +4,16 @@ module.exports = {
 	name: 'guildMemberAdd',
 	/**
 	 * @param {import('discord.js').Client} client
-	 * @param {import('discord.js').Message} message
+	 * @param {import('discord.js').GuildMember} member
 	 * @param {string[]} args
 	 */
-	run: async (client, message, args) => {
+	run: async (client, member, args) => {
 
-		await createUser(message);
+		await createUser(member);
 		
-		const msg = `Welcome motahfockin <@${message.user.username} to our server!`;
+		const msg = `Welcome motahfockin <@${member.user.username} to our server!`;
 
-		message.send(msg);
-		
+		member.send(msg);
+		// console.log(member, args);
 	},
 };

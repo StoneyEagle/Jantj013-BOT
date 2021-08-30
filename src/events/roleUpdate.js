@@ -4,11 +4,12 @@ module.exports = {
 	name: 'roleUpdate',
 	/**
 	 * @param {import('discord.js').Client} client
-	 * @param {import('discord.js').Message} message
+	 * @param {import('discord.js').Role} role
 	 * @param {string[]} args
 	 */
-	run: async (client, message, args) => {
+	run: async (client, role, args) => {
 
-		await updateRole(message);
+		await updateRole(role);
+		// console.log(role, args);
 	},
 };
