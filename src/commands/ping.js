@@ -1,7 +1,7 @@
 const Command = require('../structures/Command');
 
 module.exports = new Command({
-	name: 'ping',
+	name: __filename.replace('.js','').replace(/.*\\/,''),
   description: 'Shows the ping of the bot!',
 	run: async (client, interaction, args) => {
 

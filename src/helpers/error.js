@@ -1,11 +1,5 @@
 "use strict";
 
-function isErrorGroupWrapper(error) {
-    return Reflect.has(error, '_errors');
-}
-function isErrorResponse(error) {
-    return typeof Reflect.get(error, 'message') === 'string';
-}
 /**
  * Represents an API error returned by Discord
  * @extends Error

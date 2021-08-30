@@ -27,32 +27,153 @@ model User {
   bot           Boolean   @default(false)
   banned_at     DateTime?
   deleted_at    DateTime?
-
-  role_user RoleOnUser[]
-
+  role          Role[]
+  invites       Invite[]
+  guild         Guild[]
 }
 
 model Role {
   id          String  @id
   name        String
   displayName String
-  permissions String
-  position    Int
   color       Int
   hoist       Boolean
+  rawPosition Int
   managed     Boolean
   mentionable Boolean
-  icon        String?
-
-  role_user RoleOnUser[]
-
+  deleted     Boolean
+  tags        String?
+  permissions String
+  user        User[]
+  guild       Guild[]
 }
 
-model RoleOnUser {
-  role   Role   @relation(fields: [roleId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  roleId String
-  user   User   @relation(fields: [userId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  userId String
+model Guild {
+  id                          String          @id
+  name                        String
+  icon                        String?
+  features                    String
+  commands                    Command[]
+  channels                    Channel[]
+  bans                        Ban[]
+  roles                       Role[]
+  voiceStates                 VoiceState[]
+  stageInstances              StageInstance[]
+  invites                     Invite[]
+  deleted                     Boolean         @default(false)
+  available                   Boolean
+  shardId                     Int
+  splash                      String?
+  banner                      String?
+  description                 String
+  verificationLevel           String
+  vanityURLCode               String?
+  nsfwLevel                   String
+  discoverySplash             String?
+  memberCount                 Int
+  large                       Boolean
+  applicationId               String?
+  afkTimeout                  Int
+  afkChannelId                String?
+  systemChannelId             String?
+  premiumTier                 String
+  premiumSubscriptionCount    Int
+  explicitContentFilter       String
+  mfaLevel                    String
+  joinedTimestamp             DateTime
+  defaultMessageNotifications String
+  systemChannelFlags          Int             @default(0)
+  maximumMembers              Int
+  maximumPresences            Int?
+  approximateMemberCount      Int?
+  approximatePresenceCount    Int?
+  vanityURLUses               String?
+  rulesChannelId              String?
+  publicUpdatesChannelId      String?
+  preferredLocale             String
+  ownerId                     String?
+  emojis                      Emoji[]
+  stickers                    Stickers[]
+  textChannelId               String?
+  user                        User[]
+}
 
-  @@id([roleId, userId])
+model Command {
+  id                String  @id
+  applicationId     String
+  guildId           String
+  type              String
+  name              String
+  description       String
+  options           String
+  defaultPermission Boolean
+  guild             Guild[]
+}
+
+model Channel {
+  type             String
+  deleted          Boolean  @default(false)
+  guild            Guild[]
+  guildId          String
+  parentId         String?
+  nsfw             Boolean  @default(true)
+  id               String   @id
+  name             String
+  rawPosition      Int
+  topic            String?
+  lastMessageId    String?
+  rateLimitPerUser Int      @default(0)
+  invites          Invite[]
+}
+
+model Ban {
+  id    String  @id
+  guild Guild[]
+}
+
+model VoiceState {
+  id    String  @id
+  guild Guild[]
+}
+
+model StageInstance {
+  id String @id
+
+  guild Guild[]
+}
+
+model Invite {
+  code              String    @id
+  presenceCount     Int?
+  memberCount       Int?
+  temporary         Boolean
+  maxAge            Int
+  uses              Int
+  maxUses           Int
+  targetUser        String?
+  targetApplication String?
+  targetType        String?
+  createdTimestamp  DateTime
+  expiresTimestamp  DateTime?
+  stageInstance     String?
+  guild             Guild[]
+  inviter           User[]
+  channel           Channel[]
+}
+
+model Emoji {
+  animated       Boolean
+  name           String
+  id             String  @id
+  deleted        Boolean @default(false)
+  guild          Guild[]
+  requiresColons Boolean
+  managed        Boolean
+  available      Boolean
+  roles          String
+}
+
+model Stickers {
+  id    String  @id
+  guild Guild[]
 }

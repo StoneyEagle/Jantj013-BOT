@@ -3,6 +3,7 @@ const commands = require('../commands');
 const router = require('./router');
 const migrations = require('./migrations');
 const seed = require('./seed');
+const test = require('./test');
 
 /**
  * @param {import('discord.js').Client} client} 
@@ -40,6 +41,8 @@ module.exports = (client) => {
 
     console.log('Bot is ready to go.');
     console.log('______________________________________________________________________');
+
+    test(client);
 
   });
 

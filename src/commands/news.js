@@ -3,7 +3,7 @@ const Command = require('../structures/Command');
 const welcome = require('../embeds/welcome');
 
 module.exports = new Command({
-	name: 'newsleter',
+	name: __filename.replace('.js','').replace(/.*\\/,''),
   description: 'sends newsletter to subscribed users',
 		
 	run: async (client, message, args) => {

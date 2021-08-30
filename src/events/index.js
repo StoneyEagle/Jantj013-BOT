@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { ClientEvents } = require('discord.js')
 
 /**
  * @param {import('discord.js').Client} client} 

@@ -1,7 +1,6 @@
 const Command = require('../structures/Command');
-
 module.exports = new Command({
-	name: 'hallo',
+	name: __filename.replace('.js','').replace(/.*\\/,''),
 	description: 'says Hallo',
 		
 	run: async (client, interaction, args) => {

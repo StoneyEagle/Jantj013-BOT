@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const Command = require('../structures/Command');
 
 module.exports = new Command({
-	name: 'reactionrole',
+	name: __filename.replace('.js','').replace(/.*\\/,''),
   description: 'Shows the ping of the bot!',
 		
 	run: async (client, message, args) => {
