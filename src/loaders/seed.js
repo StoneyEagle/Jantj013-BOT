@@ -19,7 +19,7 @@ const seed = async (client) => {
       shardId: g.shardId,
       splash: g.splash,
       banner: g.banner,
-      description: g.description,
+      description: g.description || '',
       verificationLevel: g.verificationLevel,
       vanityURLCode: g.vanityURLCode,
       nsfwLevel: g.nsfwLevel,
