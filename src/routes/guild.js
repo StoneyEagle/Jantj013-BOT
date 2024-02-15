@@ -19,9 +19,7 @@ const listGuildMembers = async (limit = 1000) => {
 
   const { data } = await apiClient.get(`/guilds/${process.env.GUILD_ID}/members`, {
     params: {
-      query:{
-        limit: limit,
-      }
+      limit: limit,
     }
     })
     .catch(error => {
@@ -44,7 +42,21 @@ const searchGuildMembers = async (query, limit = 1000) => {
   return data;
 };
 
+const getGuildRoles = async (query, limit = 1000) => {
+
+  const { data } = await apiClient.get(`/guilds/${process.env.GUILD_ID}/roles`, {
+      query,
+      limit
+    })
+    .catch(error => {
+      throw new DiscordAPIError(error);
+    });
+
+  return data;
+};
+
 module.exports = {
+  getGuildRoles,
   getGuildMember,
   listGuildMembers,
   searchGuildMembers,

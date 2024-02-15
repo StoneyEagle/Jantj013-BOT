@@ -8,10 +8,6 @@ module.exports = {
 	 */
 	run: async (client, message, args) => {
 		// console.log(message, args);
-		if (!message.content.startsWith('/') || message.author.bot) return;
-
-		const arg = message.content.slice(1).trim().split(' ');
-		const command = arg.shift().toLowerCase();
-		console.log(command);
+		
 	},
 };

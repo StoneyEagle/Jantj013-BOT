@@ -11,7 +11,7 @@ const test = require('./test');
 module.exports = (client) => {
 
   console.log('______________________________________________________________________');
-  console.log('Starting Jantj013 Bot.');
+  console.log(`Starting ${process.env.BOT_NAME}.`);
 
   commands(client);
   router(client);

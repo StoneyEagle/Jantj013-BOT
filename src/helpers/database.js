@@ -2,6 +2,20 @@ const { prismaMedia } = require("../config/database");
 const { listGuildMembers, getGuildRoles } = require("../routes/guild");
 const { getColors, diff } = require("./functions");
 
+/**`
+ * * User.
+ * @param {string} userId
+ */
+const findUserById = async (id) => {
+  
+  const user = await prismaMedia.user.findFirst({
+    where: {
+      id: id
+    },
+  });
+  
+  return user;
+}
 
 /**`
  * * User roles list.
@@ -10,10 +24,10 @@ const { getColors, diff } = require("./functions");
 const getRoles = async (userId = undefined) => {
   let roles = await prismaMedia.role.findMany({
     where: {
-      role_user: {
+      user: {
         some: {
-          userId: userId,
-        },
+          id: userId,
+        }
       }
     }
   });
@@ -48,7 +62,7 @@ const createUser = async (user) => {
     pending: user.pending,
     bot: user.user.bot,
     deleted_at: null,
-    role_user: {
+    role: {
       connectOrCreate: user._roles.map(role => {
         return {
           where: {
@@ -65,7 +79,7 @@ const createUser = async (user) => {
     },
   };
 
-  await prismaMedia.user.upsert({
+  const u = await prismaMedia.user.upsert({
     where: {
       id: data.id
     },
@@ -75,6 +89,7 @@ const createUser = async (user) => {
   
   console.log(`User ${user.user.username} joined.`);
   console.log('______________________________________________________________________');
+  return u;
 };
 
 /**
@@ -141,7 +156,7 @@ const unbanUser = async (user) => {
 const updateUserRoles = async (user) => {
 
   const roles = await getRoles(user.id);
-  let response = await listGuildMembers(user);
+  let response = await listGuildMembers();
 
   if (response.roles?.length > 0 && (roles.length > response.roles.length || roles.length < response.roles.length)) {
 
@@ -156,7 +171,7 @@ const updateUserRoles = async (user) => {
         id: user.id,
       },
       data: {
-        role_user: {
+        role: {
           connectOrCreate: response.roles.map(role => {
             return {
               where: {
@@ -270,6 +285,7 @@ const deleteRole = async (role) => {
 };
 
 module.exports = {
+  findUserById,
   getRoles,
   createUser,
   updateUserRoles,

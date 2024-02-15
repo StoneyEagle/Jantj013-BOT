@@ -9,7 +9,7 @@ module.exports = async () => {
   }
 
   execSync('npx prisma migrate dev --name init && npx prisma generate');
-  await prismaMedia.$queryRaw('PRAGMA journal_mode=WAL;');
+  await prismaMedia.$queryRaw`PRAGMA journal_mode=WAL;`;
   
   console.log('Database migrated.');
 

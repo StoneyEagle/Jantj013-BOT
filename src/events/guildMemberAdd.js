@@ -1,3 +1,4 @@
+const welcome = require("../embeds/welcome");
 const { createUser } = require("../helpers/database");
 
 module.exports = {
@@ -8,12 +9,16 @@ module.exports = {
 	 * @param {string[]} args
 	 */
 	run: async (client, member, args) => {
-
-		await createUser(member);
+		try {
+			const user = await createUser(member);
+			
+			const msg = `Hey <@${member.user.username}, Welcome to our server!`;
+	
+			member.send(msg);
+			
+		} catch (error) {
+			
+		}
 		
-		const msg = `Welcome motahfockin <@${member.user.username} to our server!`;
-
-		member.send(msg);
-		// console.log(member, args);
 	},
 };

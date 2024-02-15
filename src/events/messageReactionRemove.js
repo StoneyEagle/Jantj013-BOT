@@ -6,40 +6,34 @@ module.exports = {
 	 * @param {string[]} args
 	 */
 	run: async (client, messageReaction, user) => {
-
 		if (user.bot) return;
 
-		const guild = client.guilds.cache.find(g => g.id === process.env.GUILD_ID);
-		const User = guild.members.cache.find(m => m.user.id == user.id);
-		const fortnite = guild.roles.cache.find(r => r.name.includes('Fortnite'));
-		const music = guild.roles.cache.find(r => r.name.includes('Music'));
-		const relax = guild.roles.cache.find(r => r.name.includes('Relax'));
-		const uno = guild.roles.cache.find(r => r.name.includes('Uno'));
-		const skribbl = guild.roles.cache.find(r => r.name.includes('Skribbl'));
+		// const guild = client.guilds.cache.find(
+		// 	(g) => g.id === process.env.GUILD_ID
+		// );
+		// const User = guild.members.cache.find((m) => m.user.id == user.id);
 
-    const redEmoji = "🔴";
-    const greenEmoji = "🟢";
-    const blueEmoji = "🔵";
-    const purpleEmoji = "💜";
-    const orangeEmoji = "🟠";
+		// const member = guild.roles.cache.find((r) =>
+		// 	r.name.includes("Member")
+		// );
+		// const checkBox = "✅";
 
-		if (messageReaction.emoji.name == redEmoji) {
-			await User.roles.remove(uno);
-		}
-		else if (messageReaction.emoji.name == greenEmoji) {
-			await User.roles.remove(fortnite);
-		}
-		else if (messageReaction.emoji.name == blueEmoji) {
-			await User.roles.remove(relax);
-		}
-		else if (messageReaction.emoji.name == purpleEmoji) {
-			await User.roles.remove(music);
-		}
-		else if (messageReaction.emoji.name == orangeEmoji) {
-			await User.roles.remove(skribbl);
-		}
+		// if (messageReaction.emoji.name == checkBox) {
+		// 	await User.roles.add(member);
+		// }
 
-		messageReaction.message.reply(`Removed ${messageReaction.emoji.name} from your roles.`);
+		// messageReaction.message.reply(
+		// 	`${member} removed from your roles.`
+		// );
+
+		// client.on("raw", async (data) => {
+		// 	if (
+		// 		data.t == "MESSAGE_REACTION_REMOVE" &&
+		// 		data.d.user_id == User.id
+		// 	) {
+		// 		client.emit("messageReactionRemove", messageReaction, user);
+		// 	}
+		// });
 
 	},
 };

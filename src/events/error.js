@@ -7,7 +7,7 @@ module.exports = {
 	 * @param {string[]} args
 	 */
 	run: async (client, error, args) => {
-		// console.log(error, args);
+		console.error(error, args);
 		
 	},
 };

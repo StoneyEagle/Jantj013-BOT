@@ -8,7 +8,6 @@ datasource db {
 
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["referentialActions", "nApi"]
 }
 
 model User {
@@ -36,12 +35,12 @@ model Role {
   id          String  @id
   name        String
   displayName String
+  rawPosition Int
   color       Int
   hoist       Boolean
-  rawPosition Int
   managed     Boolean
   mentionable Boolean
-  deleted     Boolean
+  icon        String?
   tags        String?
   permissions String
   user        User[]
@@ -60,7 +59,6 @@ model Guild {
   voiceStates                 VoiceState[]
   stageInstances              StageInstance[]
   invites                     Invite[]
-  deleted                     Boolean         @default(false)
   available                   Boolean
   shardId                     Int
   splash                      String?
@@ -112,7 +110,6 @@ model Command {
 
 model Channel {
   type             String
-  deleted          Boolean  @default(false)
   guild            Guild[]
   guildId          String
   parentId         String?
@@ -165,7 +162,6 @@ model Emoji {
   animated       Boolean
   name           String
   id             String  @id
-  deleted        Boolean @default(false)
   guild          Guild[]
   requiresColons Boolean
   managed        Boolean

@@ -8,7 +8,7 @@ module.exports = {
 	 * @param {string[]} args
 	 */
 	run: async (client, members, guild, args) => {
-		// console.log(member, args);
+		// console.log(members, args);
 		
 	},
 };
